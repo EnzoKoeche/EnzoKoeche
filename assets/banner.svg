@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Enzo Koeche — Software Engineer, Applied AI">
+<defs>
+<linearGradient id="ceu" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0c1211"/><stop offset="1" stop-color="#0a0f0e"/></linearGradient>
+<radialGradient id="brilho" cx="0.74" cy="0.44" r="0.52"><stop offset="0" stop-color="#00e5c0" stop-opacity="0.13"/><stop offset="1" stop-color="#00e5c0" stop-opacity="0"/></radialGradient>
+<linearGradient id="sumico" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000"/><stop offset="0.34" stop-color="#000"/><stop offset="0.62" stop-color="#fff"/><stop offset="1" stop-color="#fff"/></linearGradient>
+<mask id="daDireita"><rect width="100%" height="100%" fill="url(#sumico)"/></mask>
+</defs>
+<rect width="1200" height="340" fill="url(#ceu)"/>
+<rect width="1200" height="340" fill="url(#brilho)"/>
+<g mask="url(#daDireita)">
+<line x1="899.4" y1="88.4" x2="932.3" y2="148.6" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="899.4" y1="88.4" x2="863.7" y2="148.5" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="1102.3" y1="285.2" x2="1063.3" y2="213.4" stroke="#00e5c0" stroke-opacity="0.23" stroke-width="0.9"/>
+<line x1="1102.3" y1="285.2" x2="996.6" y2="273.9" stroke="#00e5c0" stroke-opacity="0.21" stroke-width="0.9"/>
+<line x1="588.2" y1="224.7" x2="571.1" y2="293.4" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="588.2" y1="224.7" x2="625.8" y2="155.7" stroke="#00e5c0" stroke-opacity="0.23" stroke-width="0.9"/>
+<line x1="970.2" y1="73.6" x2="899.4" y2="88.4" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="970.2" y1="73.6" x2="1017.5" y2="138.8" stroke="#00e5c0" stroke-opacity="0.23" stroke-width="0.9"/>
+<line x1="813.3" y1="212.9" x2="846.5" y2="277.2" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="813.3" y1="212.9" x2="888.7" y2="221.6" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="975.4" y1="199.8" x2="932.3" y2="148.6" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="975.4" y1="199.8" x2="1017.5" y2="138.8" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="1110.9" y1="123.2" x2="1078.9" y2="47.8" stroke="#00e5c0" stroke-opacity="0.23" stroke-width="0.9"/>
+<line x1="1110.9" y1="123.2" x2="1017.5" y2="138.8" stroke="#00e5c0" stroke-opacity="0.22" stroke-width="0.9"/>
+<line x1="888.7" y1="221.6" x2="846.5" y2="277.2" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="888.7" y1="221.6" x2="920.7" y2="286.7" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="776.3" y1="281.5" x2="846.5" y2="277.2" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="776.3" y1="281.5" x2="813.3" y2="212.9" stroke="#00e5c0" stroke-opacity="0.23" stroke-width="0.9"/>
+<line x1="686.3" y1="189.0" x2="741.5" y2="147.5" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="686.3" y1="189.0" x2="625.8" y2="155.7" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="793.1" y1="102.6" x2="741.5" y2="147.5" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="793.1" y1="102.6" x2="839.4" y2="51.3" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="1078.9" y1="47.8" x2="1017.5" y2="138.8" stroke="#00e5c0" stroke-opacity="0.21" stroke-width="0.9"/>
+<line x1="996.6" y1="273.9" x2="920.7" y2="286.7" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="996.6" y1="273.9" x2="975.4" y2="199.8" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="1063.3" y1="213.4" x2="1017.5" y2="138.8" stroke="#00e5c0" stroke-opacity="0.23" stroke-width="0.9"/>
+<line x1="659.2" y1="274.0" x2="588.2" y2="224.7" stroke="#00e5c0" stroke-opacity="0.23" stroke-width="0.9"/>
+<line x1="659.2" y1="274.0" x2="686.3" y2="189.0" stroke="#00e5c0" stroke-opacity="0.22" stroke-width="0.9"/>
+<line x1="863.7" y1="148.5" x2="932.3" y2="148.6" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="698.0" y1="68.4" x2="741.5" y2="147.5" stroke="#00e5c0" stroke-opacity="0.22" stroke-width="0.9"/>
+<line x1="698.0" y1="68.4" x2="793.1" y2="102.6" stroke="#00e5c0" stroke-opacity="0.21" stroke-width="0.9"/>
+<line x1="839.4" y1="51.3" x2="899.4" y2="88.4" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="595.3" y1="76.7" x2="625.8" y2="155.7" stroke="#00e5c0" stroke-opacity="0.23" stroke-width="0.9"/>
+<line x1="595.3" y1="76.7" x2="698.0" y2="68.4" stroke="#00e5c0" stroke-opacity="0.21" stroke-width="0.9"/>
+<line x1="920.7" y1="286.7" x2="846.5" y2="277.2" stroke="#00e5c0" stroke-opacity="0.24" stroke-width="0.9"/>
+<line x1="571.1" y1="293.4" x2="659.2" y2="274.0" stroke="#00e5c0" stroke-opacity="0.22" stroke-width="0.9"/>
+<circle cx="899.4" cy="88.4" r="2.6" fill="#00e5c0" fill-opacity="0.85"/>
+<circle cx="899.4" cy="88.4" r="8" fill="none" stroke="#00e5c0" stroke-opacity="0.22" stroke-width="0.8"/>
+<circle cx="1102.3" cy="285.2" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="588.2" cy="224.7" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="970.2" cy="73.6" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="813.3" cy="212.9" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="975.4" cy="199.8" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="1110.9" cy="123.2" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="888.7" cy="221.6" r="2.6" fill="#00e5c0" fill-opacity="0.85"/>
+<circle cx="888.7" cy="221.6" r="8" fill="none" stroke="#00e5c0" stroke-opacity="0.22" stroke-width="0.8"/>
+<circle cx="776.3" cy="281.5" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="1017.5" cy="138.8" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="686.3" cy="189.0" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="793.1" cy="102.6" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="1078.9" cy="47.8" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="996.6" cy="273.9" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="1063.3" cy="213.4" r="2.6" fill="#00e5c0" fill-opacity="0.85"/>
+<circle cx="1063.3" cy="213.4" r="8" fill="none" stroke="#00e5c0" stroke-opacity="0.22" stroke-width="0.8"/>
+<circle cx="659.2" cy="274.0" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="863.7" cy="148.5" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="698.0" cy="68.4" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="839.4" cy="51.3" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="595.3" cy="76.7" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="846.5" cy="277.2" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="625.8" cy="155.7" r="2.6" fill="#00e5c0" fill-opacity="0.85"/>
+<circle cx="625.8" cy="155.7" r="8" fill="none" stroke="#00e5c0" stroke-opacity="0.22" stroke-width="0.8"/>
+<circle cx="741.5" cy="147.5" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="920.7" cy="286.7" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="932.3" cy="148.6" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+<circle cx="571.1" cy="293.4" r="1.7" fill="#00e5c0" fill-opacity="0.34"/>
+</g>
+<line x1="72" y1="96" x2="128" y2="96" stroke="#00e5c0" stroke-width="2"/>
+<text x="72" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="66" font-weight="300" letter-spacing="7" fill="#e6f1ef">ENZO KOECHE</text>
+<text x="72" y="212" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="400" letter-spacing="1.2" fill="#7d918d">Software Engineer <tspan fill="#00e5c0">·</tspan> Applied AI</text>
+<text x="72" y="278" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" letter-spacing="2.6" fill="#7d918d" fill-opacity="0.8">CURITIBA, BRAZIL</text>
+<line x1="244" y1="274" x2="540" y2="274" stroke="#e6f1ef" stroke-opacity="0.13" stroke-width="1"/>
+</svg>
