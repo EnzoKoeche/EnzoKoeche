@@ -1,32 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 250" width="1200" height="250" role="img" aria-label="Activity for EnzoKoeche">
-<rect width="1200" height="250" rx="6" fill="#0a0f0e"/>
-<rect x="0.5" y="0.5" width="1199" height="249" rx="6" fill="none" stroke="#e6f1ef" stroke-opacity="0.08"/>
-<line x1="56" y1="46" x2="96" y2="46" stroke="#00e5c0" stroke-width="2"/>
-<text x="112" y="50" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="2.6" fill="#7d918d">ACTIVITY</text>
-<text x="56" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="42" font-weight="300" fill="#e6f1ef">13</text>
-<text x="56" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.4" fill="#7d918d">PUBLIC REPOS</text>
-<text x="274" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="42" font-weight="300" fill="#e6f1ef">146</text>
-<text x="274" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.4" fill="#7d918d">COMMITS · 12 MO</text>
-<text x="491" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="42" font-weight="300" fill="#e6f1ef">213</text>
-<text x="491" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.4" fill="#7d918d">CONTRIBUTIONS · 12 MO</text>
-<text x="709" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="42" font-weight="300" fill="#e6f1ef">12</text>
-<text x="709" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.4" fill="#7d918d">LANGUAGES SHIPPED</text>
-<text x="926" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="42" font-weight="300" fill="#e6f1ef">2019</text>
-<text x="926" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.4" fill="#7d918d">ON GITHUB SINCE</text>
-<text x="56" y="174" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="2.2" fill="#7d918d" fill-opacity="0.75">LANGUAGES · PUBLIC REPOS</text>
-<rect x="56.0" y="186" width="582.9" height="8" rx="4" fill="#00e5c0"/>
-<rect x="640.9" y="186" width="378.3" height="8"  fill="#12b79c"/>
-<rect x="1021.2" y="186" width="83.8" height="8"  fill="#1c8e7c"/>
-<rect x="1107.0" y="186" width="11.3" height="8"  fill="#22685e"/>
-<rect x="1120.3" y="186" width="21.7" height="8" rx="4" fill="#274b46"/>
-<circle cx="60" cy="226" r="3.5" fill="#00e5c0"/>
-<text x="72" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#7d918d">TypeScript <tspan fill="#e6f1ef" fill-opacity="0.55">53.8%</tspan></text>
-<circle cx="200" cy="226" r="3.5" fill="#12b79c"/>
-<text x="212" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#7d918d">Python <tspan fill="#e6f1ef" fill-opacity="0.55">35.0%</tspan></text>
-<circle cx="310" cy="226" r="3.5" fill="#1c8e7c"/>
-<text x="322" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#7d918d">C# <tspan fill="#e6f1ef" fill-opacity="0.55">7.9%</tspan></text>
-<circle cx="391" cy="226" r="3.5" fill="#22685e"/>
-<text x="403" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#7d918d">HTML <tspan fill="#e6f1ef" fill-opacity="0.55">1.2%</tspan></text>
-<circle cx="487" cy="226" r="3.5" fill="#274b46"/>
-<text x="499" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#7d918d">Other <tspan fill="#e6f1ef" fill-opacity="0.55">2.2%</tspan></text>
+<rect width="1200" height="250" rx="6" fill="#071228"/>
+<rect x="0.5" y="0.5" width="1199" height="249" rx="6" fill="none" stroke="#eef4ff" stroke-opacity="0.08"/>
+<line x1="56" y1="46" x2="96" y2="46" stroke="#ff7a1a" stroke-width="2"/>
+<text x="112" y="50" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="2.6" fill="#8fa3c8">ACTIVITY</text>
+<text x="56" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="42" font-weight="300" fill="#eef4ff">14</text>
+<text x="56" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.4" fill="#8fa3c8">PUBLIC REPOS</text>
+<text x="274" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="42" font-weight="300" fill="#eef4ff">154</text>
+<text x="274" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.4" fill="#8fa3c8">COMMITS · 12 MO</text>
+<text x="491" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="42" font-weight="300" fill="#eef4ff">230</text>
+<text x="491" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.4" fill="#8fa3c8">CONTRIBUTIONS · 12 MO</text>
+<text x="709" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="42" font-weight="300" fill="#eef4ff">12</text>
+<text x="709" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.4" fill="#8fa3c8">LANGUAGES SHIPPED</text>
+<text x="926" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="42" font-weight="300" fill="#eef4ff">2019</text>
+<text x="926" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.4" fill="#8fa3c8">ON GITHUB SINCE</text>
+<text x="56" y="174" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="2.2" fill="#8fa3c8" fill-opacity="0.75">LANGUAGES · PUBLIC REPOS</text>
+<rect x="56.0" y="186" width="601.5" height="8" rx="4" fill="#ff7a1a"/>
+<rect x="659.5" y="186" width="363.3" height="8"  fill="#e08a45"/>
+<rect x="1024.8" y="186" width="79.3" height="8"  fill="#a98a68"/>
+<rect x="1106.1" y="186" width="10.8" height="8"  fill="#5ea0ff"/>
+<rect x="1119.0" y="186" width="23.0" height="8" rx="4" fill="#4a7fd0"/>
+<circle cx="60" cy="226" r="3.5" fill="#ff7a1a"/>
+<text x="72" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#8fa3c8">TypeScript <tspan fill="#eef4ff" fill-opacity="0.55">55.5%</tspan></text>
+<circle cx="200" cy="226" r="3.5" fill="#e08a45"/>
+<text x="212" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#8fa3c8">Python <tspan fill="#eef4ff" fill-opacity="0.55">33.6%</tspan></text>
+<circle cx="310" cy="226" r="3.5" fill="#a98a68"/>
+<text x="322" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#8fa3c8">C# <tspan fill="#eef4ff" fill-opacity="0.55">7.5%</tspan></text>
+<circle cx="391" cy="226" r="3.5" fill="#5ea0ff"/>
+<text x="403" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#8fa3c8">HTML <tspan fill="#eef4ff" fill-opacity="0.55">1.2%</tspan></text>
+<circle cx="487" cy="226" r="3.5" fill="#4a7fd0"/>
+<text x="499" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#8fa3c8">Other <tspan fill="#eef4ff" fill-opacity="0.55">2.3%</tspan></text>
 </svg>

@@ -15,10 +15,10 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SAIDA = f"{RAIZ}/assets/banner.svg"
 
 W, H = 1200, 340
-FUNDO = "#0a0f0e"
-ACENTO = "#00e5c0"
-CLARO = "#e6f1ef"
-APAGADO = "#7d918d"
+FUNDO = "#071228"
+ACENTO = "#ff7a1a"
+CLARO = "#eef4ff"
+APAGADO = "#8fa3c8"
 PRANCHA = "#7da2ff"  # azul de blueprint, o traco estrutural do site
 SEMENTE = 190126  # 19/01/26 — nada de especial, so pra travar o desenho
 
@@ -69,7 +69,7 @@ def main():
       f'role="img" aria-label="Enzo Koeche — Software Engineer, Applied AI">')
     a('<defs>')
     a(f'<linearGradient id="ceu" x1="0" y1="0" x2="1" y2="1">'
-      f'<stop offset="0" stop-color="#0c1211"/><stop offset="1" stop-color="{FUNDO}"/></linearGradient>')
+      f'<stop offset="0" stop-color="#0b2148"/><stop offset="1" stop-color="{FUNDO}"/></linearGradient>')
     a(f'<radialGradient id="brilho" cx="0.74" cy="0.44" r="0.52">'
       f'<stop offset="0" stop-color="{ACENTO}" stop-opacity="0.13"/>'
       f'<stop offset="1" stop-color="{ACENTO}" stop-opacity="0"/></radialGradient>')
