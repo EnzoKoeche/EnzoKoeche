@@ -19,6 +19,7 @@ FUNDO = "#0a0f0e"
 ACENTO = "#00e5c0"
 CLARO = "#e6f1ef"
 APAGADO = "#7d918d"
+PRANCHA = "#7da2ff"  # azul de blueprint, o traco estrutural do site
 SEMENTE = 190126  # 19/01/26 — nada de especial, so pra travar o desenho
 
 SANS = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
@@ -82,6 +83,23 @@ def main():
     a(f'<rect width="{W}" height="{H}" fill="url(#ceu)"/>')
     a(f'<rect width="{W}" height="{H}" fill="url(#brilho)"/>')
 
+    # ── prancha: malha, moldura e miras de canto (a identidade do site) ────
+    a(f'<g stroke="{PRANCHA}">')
+    for gx in range(0, W + 1, 24):
+        forte = gx % 120 == 0
+        a(f'<line x1="{gx}" y1="0" x2="{gx}" y2="{H}" stroke-opacity="{0.05 if forte else 0.02}" stroke-width="1"/>')
+    for gy in range(0, H + 1, 24):
+        forte = gy % 120 == 0
+        a(f'<line x1="0" y1="{gy}" x2="{W}" y2="{gy}" stroke-opacity="{0.05 if forte else 0.02}" stroke-width="1"/>')
+    a('</g>')
+    a(f'<rect x="10" y="10" width="{W - 20}" height="{H - 20}" fill="none" '
+      f'stroke="{PRANCHA}" stroke-opacity="0.22" stroke-width="1"/>')
+    for cx, cy in [(10, 10), (W - 10, 10), (10, H - 10), (W - 10, H - 10)]:
+        a(f'<g stroke="{PRANCHA}" stroke-opacity="0.55" stroke-width="1">'
+          f'<line x1="{cx - 8}" y1="{cy}" x2="{cx + 8}" y2="{cy}"/>'
+          f'<line x1="{cx}" y1="{cy - 8}" x2="{cx}" y2="{cy + 8}"/></g>'
+          f'<circle cx="{cx}" cy="{cy}" r="4" fill="none" stroke="{PRANCHA}" stroke-opacity="0.35"/>')
+
     # ── grafo ────────────────────────────────────────────────────────────
     a('<g mask="url(#daDireita)">')
     for (x1, y1), (x2, y2) in linhas:
@@ -106,9 +124,26 @@ def main():
       f'letter-spacing="1.2" fill="{APAGADO}">Software Engineer '
       f'<tspan fill="{ACENTO}">·</tspan> Applied AI</text>')
     a(f'<text x="{x0}" y="278" font-family="{MONO}" font-size="12.5" letter-spacing="2.6" '
-      f'fill="{APAGADO}" fill-opacity="0.8">CURITIBA, BRAZIL</text>')
-    a(f'<line x1="{x0 + 172}" y1="274" x2="{W * 0.45:.0f}" y2="274" stroke="{CLARO}" stroke-opacity="0.13" '
-      f'stroke-width="1"/>')
+      f'fill="{APAGADO}" fill-opacity="0.8">CURITIBA, BRAZIL · 25°26′S 49°16′W</text>')
+    # cota: linha com tiques perpendiculares, como no desenho tecnico
+    cx1, cx2, cy = x0 + 372, int(W * 0.47), 274
+    a(f'<g stroke="{PRANCHA}" stroke-opacity="0.45" stroke-width="1">'
+      f'<line x1="{cx1}" y1="{cy}" x2="{cx2}" y2="{cy}"/>'
+      f'<line x1="{cx1}" y1="{cy - 5}" x2="{cx1}" y2="{cy + 5}"/>'
+      f'<line x1="{cx2}" y1="{cy - 5}" x2="{cx2}" y2="{cy + 5}"/></g>')
+
+    # ── mini-carimbo: o quadro de titulo da prancha, canto inferior direito ─
+    cw, ch = 236, 54
+    cx, cy = W - 10 - cw, H - 10 - ch
+    a(f'<g font-family="{MONO}">')
+    a(f'<rect x="{cx}" y="{cy}" width="{cw}" height="{ch}" fill="{FUNDO}" fill-opacity="0.72" '
+      f'stroke="{PRANCHA}" stroke-opacity="0.4" stroke-width="1"/>')
+    a(f'<line x1="{cx}" y1="{cy + 27}" x2="{cx + cw}" y2="{cy + 27}" stroke="{PRANCHA}" stroke-opacity="0.25"/>')
+    a(f'<line x1="{cx + 118}" y1="{cy + 27}" x2="{cx + 118}" y2="{cy + ch}" stroke="{PRANCHA}" stroke-opacity="0.25"/>')
+    a(f'<text x="{cx + 10}" y="{cy + 18}" font-size="9.5" letter-spacing="2.2" fill="{APAGADO}">PROJETO: ENZO KOECHE</text>')
+    a(f'<text x="{cx + 10}" y="{cy + 45}" font-size="9.5" letter-spacing="2.2" fill="{APAGADO}">ESC 1:1</text>')
+    a(f'<text x="{cx + 128}" y="{cy + 45}" font-size="9.5" letter-spacing="2.2" fill="{ACENTO}">FL. 01/01</text>')
+    a('</g>')
     a('</svg>')
 
     os.makedirs(os.path.dirname(SAIDA), exist_ok=True)
