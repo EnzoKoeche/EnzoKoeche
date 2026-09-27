@@ -8,6 +8,8 @@ Right now: **Applied AI @ [Lyx Engenharia](https://lyx.com.br)**, building inter
 southern Brazil's largest homebuilders, and **[Milkup](https://milkup.com.br)**, software for dairy
 companies. Software Engineering at PUCPR, in Curitiba.
 
+> **New:** my portfolio now runs a retrieval agent **in your browser** — ask it anything about me, it answers with a cited source or an honest *"I didn't find it"*. No server, no API key, your question never leaves the page. → **[enzokoeche.vercel.app/#perguntar](https://enzokoeche.vercel.app/#perguntar)**
+
 <a href="https://enzokoeche.vercel.app"><img src="https://img.shields.io/badge/Portfolio-enzokoeche.vercel.app-0D1513?style=flat-square&logo=vercel&logoColor=00E5C0&labelColor=0A0F0E"></a>
 <a href="https://www.linkedin.com/in/enzo-koeche-castagna-82ab6137b/"><img src="https://img.shields.io/badge/LinkedIn-Enzo%20Koeche-0D1513?style=flat-square&labelColor=0A0F0E"></a>
 <a href="mailto:koechecastagnaenzo@gmail.com"><img src="https://img.shields.io/badge/Email-koechecastagnaenzo-0D1513?style=flat-square&logo=gmail&logoColor=00E5C0&labelColor=0A0F0E"></a>
@@ -33,6 +35,7 @@ Five things I insist on. Each one has public code proving it isn't just talk.
 | Project | What it is | Built with |
 |---|---|---|
 | **[RAG Conformidade Laticínios](https://github.com/EnzoKoeche/rag-conformidade-laticinios)** | Agentic RAG answering dairy-compliance questions with a cited official source — or an honest *"I don't know"*. | `Python` `LangGraph` `RAG` `Streamlit` |
+| **[enzokoeche-site](https://github.com/EnzoKoeche/enzokoeche-site)** | This profile's big brother: an engineering sheet with live GitHub telemetry, an in-browser BM25 agent (eval-enforced refusal) and the build's commit printed on the title block. | `Next.js` `TypeScript` `BM25` |
 | **[Agente de Crédito](https://github.com/EnzoKoeche/agente-credito-langgraph)** | Consumer-credit analysis agent with typed state, human-in-the-loop and evals that run in CI. | `Python` `LangGraph` `HITL` `Evals` |
 | **[ShadowMesh](https://github.com/EnzoKoeche/shadowmesh)** | An AI security control plane: discovers, classifies and governs AI tool usage across an organisation. | `Python` `Security` `Governance` |
 | **[Soulstone](https://github.com/EnzoKoeche/soulstone)** | Real-time Steam Market price tracker for the *TBH: Task Bar Hero* community. | `React` `TypeScript` `Supabase` |
