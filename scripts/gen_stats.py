@@ -20,10 +20,10 @@ SAIDA = f"{RAIZ}/assets/stats.svg"
 USUARIO = "EnzoKoeche"
 
 W, H = 1200, 250
-FUNDO = "#071228"
-ACENTO = "#ff7a1a"
-CLARO = "#eef4ff"
-APAGADO = "#8fa3c8"
+FUNDO = "#0b0b0b"
+ACENTO = "#ffffff"
+CLARO = "#f5f5f5"
+APAGADO = "#8f8f8f"
 SANS = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
 
@@ -98,7 +98,7 @@ def main():
     fatias = top + ([("Other", resto)] if resto > 0 else [])
 
     # do acento pro apagado, pra barra ler como uma escala e nao como confete
-    tons = ["#ff7a1a", "#e08a45", "#a98a68", "#5ea0ff", "#4a7fd0", "#39619f", "#2a4470"]
+    tons = ["#f5f5f5", "#c9c9c9", "#a0a0a0", "#787878", "#565656", "#3a3a3a", "#282828"]
 
     # estrelas e seguidores ficam de fora de proposito: numero baixo em cartao
     # de perfil nao informa nada e so chama atencao pro que nao interessa.

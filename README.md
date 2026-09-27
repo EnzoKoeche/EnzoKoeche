@@ -10,9 +10,9 @@ companies. Software Engineering at PUCPR, in Curitiba.
 
 > **New:** my portfolio now runs a retrieval agent **in your browser** — ask it anything about me, it answers with a cited source or an honest *"I didn't find it"*. No server, no API key, your question never leaves the page. → **[enzokoeche.vercel.app/#perguntar](https://enzokoeche.vercel.app/#perguntar)**
 
-<a href="https://enzokoeche.vercel.app"><img src="https://img.shields.io/badge/Portfolio-enzokoeche.vercel.app-0A1B38?style=flat-square&logo=vercel&logoColor=FF7A1A&labelColor=071228"></a>
-<a href="https://www.linkedin.com/in/enzo-koeche-castagna-82ab6137b/"><img src="https://img.shields.io/badge/LinkedIn-Enzo%20Koeche-0A1B38?style=flat-square&labelColor=071228"></a>
-<a href="mailto:koechecastagnaenzo@gmail.com"><img src="https://img.shields.io/badge/Email-koechecastagnaenzo-0A1B38?style=flat-square&logo=gmail&logoColor=FF7A1A&labelColor=071228"></a>
+<a href="https://enzokoeche.vercel.app"><img src="https://img.shields.io/badge/Portfolio-enzokoeche.vercel.app-161616?style=flat-square&logo=vercel&logoColor=F5F5F5&labelColor=0B0B0B"></a>
+<a href="https://www.linkedin.com/in/enzo-koeche-castagna-82ab6137b/"><img src="https://img.shields.io/badge/LinkedIn-Enzo%20Koeche-161616?style=flat-square&labelColor=0B0B0B"></a>
+<a href="mailto:koechecastagnaenzo@gmail.com"><img src="https://img.shields.io/badge/Email-koechecastagnaenzo-161616?style=flat-square&logo=gmail&logoColor=F5F5F5&labelColor=0B0B0B"></a>
 
 ---
 
@@ -52,45 +52,45 @@ Tools I use often enough to have opinions about.
 
 **Languages**
 
-![Python](https://img.shields.io/badge/Python-0A1B38?style=flat-square&logo=python&logoColor=FF7A1A)
-![TypeScript](https://img.shields.io/badge/TypeScript-0A1B38?style=flat-square&logo=typescript&logoColor=FF7A1A)
-![JavaScript](https://img.shields.io/badge/JavaScript-0A1B38?style=flat-square&logo=javascript&logoColor=FF7A1A)
-![SQL](https://img.shields.io/badge/SQL-0A1B38?style=flat-square&logo=postgresql&logoColor=FF7A1A)
-![C#](https://img.shields.io/badge/C%23-0A1B38?style=flat-square&logo=dotnet&logoColor=FF7A1A)
-![Dart](https://img.shields.io/badge/Dart-0A1B38?style=flat-square&logo=dart&logoColor=FF7A1A)
+![Python](https://img.shields.io/badge/Python-161616?style=flat-square&logo=python&logoColor=F5F5F5)
+![TypeScript](https://img.shields.io/badge/TypeScript-161616?style=flat-square&logo=typescript&logoColor=F5F5F5)
+![JavaScript](https://img.shields.io/badge/JavaScript-161616?style=flat-square&logo=javascript&logoColor=F5F5F5)
+![SQL](https://img.shields.io/badge/SQL-161616?style=flat-square&logo=postgresql&logoColor=F5F5F5)
+![C#](https://img.shields.io/badge/C%23-161616?style=flat-square&logo=dotnet&logoColor=F5F5F5)
+![Dart](https://img.shields.io/badge/Dart-161616?style=flat-square&logo=dart&logoColor=F5F5F5)
 
 **AI & Data**
 
-![LangGraph](https://img.shields.io/badge/LangGraph-0A1B38?style=flat-square&logo=langchain&logoColor=FF7A1A)
-![LangChain](https://img.shields.io/badge/LangChain-0A1B38?style=flat-square&logo=langchain&logoColor=FF7A1A)
-![Anthropic](https://img.shields.io/badge/Anthropic%20SDK-0A1B38?style=flat-square&logo=anthropic&logoColor=FF7A1A)
-![OpenAI](https://img.shields.io/badge/OpenAI%20SDK-0A1B38?style=flat-square)
-![Pandas](https://img.shields.io/badge/Pandas-0A1B38?style=flat-square&logo=pandas&logoColor=FF7A1A)
-![Power BI](https://img.shields.io/badge/Power%20BI-0A1B38?style=flat-square)
+![LangGraph](https://img.shields.io/badge/LangGraph-161616?style=flat-square&logo=langchain&logoColor=F5F5F5)
+![LangChain](https://img.shields.io/badge/LangChain-161616?style=flat-square&logo=langchain&logoColor=F5F5F5)
+![Anthropic](https://img.shields.io/badge/Anthropic%20SDK-161616?style=flat-square&logo=anthropic&logoColor=F5F5F5)
+![OpenAI](https://img.shields.io/badge/OpenAI%20SDK-161616?style=flat-square)
+![Pandas](https://img.shields.io/badge/Pandas-161616?style=flat-square&logo=pandas&logoColor=F5F5F5)
+![Power BI](https://img.shields.io/badge/Power%20BI-161616?style=flat-square)
 
 **Web & Backend**
 
-![Next.js](https://img.shields.io/badge/Next.js-0A1B38?style=flat-square&logo=nextdotjs&logoColor=FF7A1A)
-![React](https://img.shields.io/badge/React-0A1B38?style=flat-square&logo=react&logoColor=FF7A1A)
-![Tailwind](https://img.shields.io/badge/Tailwind-0A1B38?style=flat-square&logo=tailwindcss&logoColor=FF7A1A)
-![Node.js](https://img.shields.io/badge/Node.js-0A1B38?style=flat-square&logo=nodedotjs&logoColor=FF7A1A)
-![FastAPI](https://img.shields.io/badge/FastAPI-0A1B38?style=flat-square&logo=fastapi&logoColor=FF7A1A)
-![Streamlit](https://img.shields.io/badge/Streamlit-0A1B38?style=flat-square&logo=streamlit&logoColor=FF7A1A)
+![Next.js](https://img.shields.io/badge/Next.js-161616?style=flat-square&logo=nextdotjs&logoColor=F5F5F5)
+![React](https://img.shields.io/badge/React-161616?style=flat-square&logo=react&logoColor=F5F5F5)
+![Tailwind](https://img.shields.io/badge/Tailwind-161616?style=flat-square&logo=tailwindcss&logoColor=F5F5F5)
+![Node.js](https://img.shields.io/badge/Node.js-161616?style=flat-square&logo=nodedotjs&logoColor=F5F5F5)
+![FastAPI](https://img.shields.io/badge/FastAPI-161616?style=flat-square&logo=fastapi&logoColor=F5F5F5)
+![Streamlit](https://img.shields.io/badge/Streamlit-161616?style=flat-square&logo=streamlit&logoColor=F5F5F5)
 
 **Data & Infra**
 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0A1B38?style=flat-square&logo=postgresql&logoColor=FF7A1A)
-![Supabase](https://img.shields.io/badge/Supabase-0A1B38?style=flat-square&logo=supabase&logoColor=FF7A1A)
-![Prisma](https://img.shields.io/badge/Prisma-0A1B38?style=flat-square&logo=prisma&logoColor=FF7A1A)
-![Docker](https://img.shields.io/badge/Docker-0A1B38?style=flat-square&logo=docker&logoColor=FF7A1A)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-0A1B38?style=flat-square&logo=githubactions&logoColor=FF7A1A)
-![Vercel](https://img.shields.io/badge/Vercel-0A1B38?style=flat-square&logo=vercel&logoColor=FF7A1A)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-161616?style=flat-square&logo=postgresql&logoColor=F5F5F5)
+![Supabase](https://img.shields.io/badge/Supabase-161616?style=flat-square&logo=supabase&logoColor=F5F5F5)
+![Prisma](https://img.shields.io/badge/Prisma-161616?style=flat-square&logo=prisma&logoColor=F5F5F5)
+![Docker](https://img.shields.io/badge/Docker-161616?style=flat-square&logo=docker&logoColor=F5F5F5)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-161616?style=flat-square&logo=githubactions&logoColor=F5F5F5)
+![Vercel](https://img.shields.io/badge/Vercel-161616?style=flat-square&logo=vercel&logoColor=F5F5F5)
 
 **Mobile & Desktop**
 
-![Flutter](https://img.shields.io/badge/Flutter-0A1B38?style=flat-square&logo=flutter&logoColor=FF7A1A)
-![.NET](https://img.shields.io/badge/.NET%208-0A1B38?style=flat-square&logo=dotnet&logoColor=FF7A1A)
-![SQLite](https://img.shields.io/badge/SQLite-0A1B38?style=flat-square&logo=sqlite&logoColor=FF7A1A)
+![Flutter](https://img.shields.io/badge/Flutter-161616?style=flat-square&logo=flutter&logoColor=F5F5F5)
+![.NET](https://img.shields.io/badge/.NET%208-161616?style=flat-square&logo=dotnet&logoColor=F5F5F5)
+![SQLite](https://img.shields.io/badge/SQLite-161616?style=flat-square&logo=sqlite&logoColor=F5F5F5)
 
 ---
 
