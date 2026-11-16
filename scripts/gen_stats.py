@@ -16,14 +16,17 @@ import subprocess
 import urllib.request
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SAIDA = f"{RAIZ}/assets/stats.svg"
+SAIDA = RAIZ + "/assets/stats-{tema}.svg"
 USUARIO = "EnzoKoeche"
 
 W, H = 1200, 250
-FUNDO = "#0b0b0b"
-ACENTO = "#ffffff"
-CLARO = "#f5f5f5"
-APAGADO = "#8f8f8f"
+# mesmos tons do terminal e dos diagramas (scripts/gen_profile.py)
+TEMAS = {
+    "dark": dict(FUNDO="#0a0a0a", ACENTO="#f2f2f2", CLARO="#f2f2f2", APAGADO="#8a8a8a", LINHA="#ffffff",
+                 tons=["#f2f2f2", "#c9c9c9", "#a0a0a0", "#787878", "#565656", "#3a3a3a", "#282828"]),
+    "light": dict(FUNDO="#fbfbfb", ACENTO="#0b0b0b", CLARO="#0b0b0b", APAGADO="#5c5c5c", LINHA="#000000",
+                  tons=["#0b0b0b", "#3a3a3a", "#5c5c5c", "#7d7d7d", "#a0a0a0", "#c2c2c2", "#dcdcdc"]),
+}
 SANS = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
 
@@ -97,9 +100,6 @@ def main():
     resto = total - sum(v for _, v in top)
     fatias = top + ([("Other", resto)] if resto > 0 else [])
 
-    # do acento pro apagado, pra barra ler como uma escala e nao como confete
-    tons = ["#f5f5f5", "#c9c9c9", "#a0a0a0", "#787878", "#565656", "#3a3a3a", "#282828"]
-
     # estrelas e seguidores ficam de fora de proposito: numero baixo em cartao
     # de perfil nao informa nada e so chama atencao pro que nao interessa.
     desde = u["createdAt"][:4]
@@ -111,13 +111,26 @@ def main():
         (desde, "on github since"),
     ]
 
+    for tema in TEMAS:
+        desenhar(tema, numeros, fatias, total)
+    print(f"repos={u['repositories']['totalCount']} "
+          f"commits={cc['totalCommitContributions']} "
+          f"contrib={cc['contributionCalendar']['totalContributions']} "
+          f"langs={[n for n, _ in fatias]}")
+
+
+def desenhar(tema, numeros, fatias, total):
+    t = TEMAS[tema]
+    FUNDO, ACENTO, CLARO, APAGADO = t["FUNDO"], t["ACENTO"], t["CLARO"], t["APAGADO"]
+    # do acento pro apagado, pra barra ler como uma escala e nao como confete
+    tons = t["tons"]
     p = []
     a = p.append
     a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" '
       f'role="img" aria-label="Activity for {USUARIO}">')
-    a(f'<rect width="{W}" height="{H}" rx="6" fill="{FUNDO}"/>')
-    a(f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="6" fill="none" '
-      f'stroke="{CLARO}" stroke-opacity="0.08"/>')
+    a(f'<rect width="{W}" height="{H}" rx="10" fill="{FUNDO}"/>')
+    a(f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="10" fill="none" '
+      f'stroke="{t["LINHA"]}" stroke-opacity="0.14"/>')
 
     x0 = 56
     a(f'<line x1="{x0}" y1="46" x2="{x0+40}" y2="46" stroke="{ACENTO}" stroke-width="2"/>')
@@ -128,7 +141,7 @@ def main():
     passo = (W - x0 * 2) / len(numeros)
     for i, (valor, rotulo) in enumerate(numeros):
         x = x0 + passo * i
-        a(f'<text x="{x:.0f}" y="118" font-family="{SANS}" font-size="42" font-weight="300" '
+        a(f'<text x="{x:.0f}" y="118" font-family="{MONO}" font-size="38" font-weight="500" '
           f'fill="{CLARO}">{valor}</text>')
         a(f'<text x="{x:.0f}" y="142" font-family="{MONO}" font-size="11" letter-spacing="1.4" '
           f'fill="{APAGADO}">{esc(rotulo).upper()}</text>')
@@ -149,16 +162,13 @@ def main():
     for i, (nome, tam) in enumerate(fatias):
         pct = 100 * tam / total
         a(f'<circle cx="{lx+4:.0f}" cy="{by+40}" r="3.5" fill="{tons[min(i, len(tons)-1)]}"/>')
-        a(f'<text x="{lx+16:.0f}" y="{by+44}" font-family="{SANS}" font-size="13" fill="{APAGADO}">'
+        a(f'<text x="{lx+16:.0f}" y="{by+44}" font-family="{MONO}" font-size="12.5" fill="{APAGADO}">'
           f'{esc(nome)} <tspan fill="{CLARO}" fill-opacity="0.55">{pct:.1f}%</tspan></text>')
         lx += 26 + len(nome) * 7.4 + 40
 
     a('</svg>')
-    open(SAIDA, "w", encoding="utf-8").write("\n".join(p) + "\n")
-    print(f"{SAIDA}  repos={u['repositories']['totalCount']} "
-          f"commits={cc['totalCommitContributions']} "
-          f"contrib={cc['contributionCalendar']['totalContributions']} "
-          f"langs={[n for n, _ in fatias]}")
+    open(SAIDA.format(tema=tema), "w", encoding="utf-8").write("\n".join(p) + "\n")
+    print(SAIDA.format(tema=tema))
 
 
 if __name__ == "__main__":
