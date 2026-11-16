@@ -5,24 +5,24 @@
 <text x="112" y="50" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="2.6" fill="#8a8a8a">ACTIVITY</text>
 <text x="56" y="118" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="38" font-weight="500" fill="#f2f2f2">14</text>
 <text x="56" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.4" fill="#8a8a8a">PUBLIC REPOS</text>
-<text x="274" y="118" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="38" font-weight="500" fill="#f2f2f2">170</text>
+<text x="274" y="118" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="38" font-weight="500" fill="#f2f2f2">171</text>
 <text x="274" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.4" fill="#8a8a8a">COMMITS · 12 MO</text>
-<text x="491" y="118" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="38" font-weight="500" fill="#f2f2f2">254</text>
+<text x="491" y="118" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="38" font-weight="500" fill="#f2f2f2">256</text>
 <text x="491" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.4" fill="#8a8a8a">CONTRIBUTIONS · 12 MO</text>
 <text x="709" y="118" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="38" font-weight="500" fill="#f2f2f2">12</text>
 <text x="709" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.4" fill="#8a8a8a">LANGUAGES SHIPPED</text>
 <text x="926" y="118" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="38" font-weight="500" fill="#f2f2f2">2019</text>
 <text x="926" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.4" fill="#8a8a8a">ON GITHUB SINCE</text>
 <text x="56" y="174" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="2.2" fill="#8a8a8a" fill-opacity="0.75">LANGUAGES · PUBLIC REPOS</text>
-<rect x="56.0" y="186" width="581.9" height="8" rx="4" fill="#f2f2f2"/>
-<rect x="639.9" y="186" width="384.2" height="8"  fill="#c9c9c9"/>
-<rect x="1026.1" y="186" width="76.7" height="8"  fill="#a0a0a0"/>
-<rect x="1104.8" y="186" width="13.0" height="8"  fill="#787878"/>
-<rect x="1119.8" y="186" width="22.2" height="8" rx="4" fill="#565656"/>
+<rect x="56.0" y="186" width="580.2" height="8" rx="4" fill="#f2f2f2"/>
+<rect x="638.2" y="186" width="386.3" height="8"  fill="#c9c9c9"/>
+<rect x="1026.4" y="186" width="76.5" height="8"  fill="#a0a0a0"/>
+<rect x="1104.9" y="186" width="13.0" height="8"  fill="#787878"/>
+<rect x="1119.9" y="186" width="22.1" height="8" rx="4" fill="#565656"/>
 <circle cx="60" cy="226" r="3.5" fill="#f2f2f2"/>
-<text x="72" y="230" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#8a8a8a">TypeScript <tspan fill="#f2f2f2" fill-opacity="0.55">53.7%</tspan></text>
+<text x="72" y="230" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#8a8a8a">TypeScript <tspan fill="#f2f2f2" fill-opacity="0.55">53.5%</tspan></text>
 <circle cx="200" cy="226" r="3.5" fill="#c9c9c9"/>
-<text x="212" y="230" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#8a8a8a">Python <tspan fill="#f2f2f2" fill-opacity="0.55">35.5%</tspan></text>
+<text x="212" y="230" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#8a8a8a">Python <tspan fill="#f2f2f2" fill-opacity="0.55">35.7%</tspan></text>
 <circle cx="310" cy="226" r="3.5" fill="#a0a0a0"/>
 <text x="322" y="230" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#8a8a8a">C# <tspan fill="#f2f2f2" fill-opacity="0.55">7.2%</tspan></text>
 <circle cx="391" cy="226" r="3.5" fill="#787878"/>
