@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 590" width="1200" height="590" role="img" aria-label="Diagram of the Lyx platform I work on: external sources feed a NestJS modular monolith and a Python ETL; both land in Postgres and are read by Next.js fronts and BI; every change goes through a delivery loop of pull request, CI audit gate, AI review agent, deploy train and production.">
+<defs><marker id="ponta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9" fill="none" stroke="#8a8a8a" stroke-width="1.6"/></marker><pattern id="malha" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.9" fill="#ffffff" fill-opacity="0.09"/></pattern></defs>
+<rect width="1200" height="590" rx="10" fill="#0a0a0a"/>
+<rect width="1200" height="590" rx="10" fill="url(#malha)"/>
+<rect x="0.5" y="0.5" width="1199" height="589" rx="10" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+<line x1="32" y1="36" x2="54" y2="36" stroke="#f2f2f2" stroke-width="2"/>
+<text x="64" y="40" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" letter-spacing="2.2" fill="#8a8a8a">LYX ENGENHARIA · WHAT I BUILD AND RUN</text>
+<line x1="32" y1="72" x2="54" y2="72" stroke="#f2f2f2" stroke-width="2"/>
+<text x="64" y="76" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" letter-spacing="2.2" fill="#8a8a8a">SOURCES</text>
+<rect x="32" y="92" width="196" height="50" rx="6" fill="#0f0f0f" stroke="#ffffff" stroke-opacity="0.2"/>
+<text x="46" y="116" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13.5" font-weight="700" fill="#f2f2f2">SAP ERP</text>
+<text x="46" y="135" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">orders · suppliers</text>
+<rect x="32" y="156" width="196" height="50" rx="6" fill="#0f0f0f" stroke="#ffffff" stroke-opacity="0.2"/>
+<text x="46" y="180" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13.5" font-weight="700" fill="#f2f2f2">Construction API</text>
+<text x="46" y="199" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">sites · contracts · QA</text>
+<rect x="32" y="220" width="196" height="50" rx="6" fill="#0f0f0f" stroke="#ffffff" stroke-opacity="0.2"/>
+<text x="46" y="244" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13.5" font-weight="700" fill="#f2f2f2">Permit portals</text>
+<text x="46" y="263" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">municipal, scraped</text>
+<rect x="32" y="284" width="196" height="50" rx="6" fill="#0f0f0f" stroke="#ffffff" stroke-opacity="0.2"/>
+<text x="46" y="308" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13.5" font-weight="700" fill="#f2f2f2">MS Project .mpp</text>
+<text x="46" y="327" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">site schedules</text>
+<rect x="32" y="348" width="196" height="50" rx="6" fill="#0f0f0f" stroke="#ffffff" stroke-opacity="0.2"/>
+<text x="46" y="372" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13.5" font-weight="700" fill="#f2f2f2">Spreadsheets</text>
+<text x="46" y="391" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">planning · finance</text>
+<rect x="300" y="92" width="470" height="178" rx="6" fill="#0f0f0f" stroke="#ffffff" stroke-opacity="0.55"/>
+<text x="314" y="116" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13.5" font-weight="700" fill="#f2f2f2">Hub · NestJS modular monolith on Bun</text>
+<rect x="314.0" y="132" width="114.9" height="22" rx="4" fill="#151515" stroke="#ffffff" stroke-opacity="0.12"/>
+<text x="323.0" y="147" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#f2f2f2" fill-opacity="0.85">controladoria/</text>
+<rect x="436.9" y="132" width="80.3" height="22" rx="4" fill="#151515" stroke="#ffffff" stroke-opacity="0.12"/>
+<text x="445.9" y="147" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#f2f2f2" fill-opacity="0.85">medições/</text>
+<rect x="525.2" y="132" width="101.1" height="22" rx="4" fill="#151515" stroke="#ffffff" stroke-opacity="0.12"/>
+<text x="534.2" y="147" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#f2f2f2" fill-opacity="0.85">legalização/</text>
+<rect x="314.0" y="164" width="267.2" height="22" rx="4" fill="#151515" stroke="#ffffff" stroke-opacity="0.12"/>
+<text x="323.0" y="179" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#f2f2f2" fill-opacity="0.85">shared/integracoes/  ← only door out</text>
+<rect x="314.0" y="196" width="114.9" height="22" rx="4" fill="#151515" stroke="#ffffff" stroke-opacity="0.12"/>
+<text x="323.0" y="211" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#f2f2f2" fill-opacity="0.85">approval flows</text>
+<rect x="436.9" y="196" width="135.7" height="22" rx="4" fill="#151515" stroke="#ffffff" stroke-opacity="0.12"/>
+<text x="445.9" y="211" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#f2f2f2" fill-opacity="0.85">retention &amp; bonds</text>
+<rect x="580.6" y="196" width="59.5" height="22" rx="4" fill="#151515" stroke="#ffffff" stroke-opacity="0.12"/>
+<text x="589.6" y="211" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#f2f2f2" fill-opacity="0.85">rework</text>
+<rect x="648.2" y="196" width="73.4" height="22" rx="4" fill="#151515" stroke="#ffffff" stroke-opacity="0.12"/>
+<text x="657.2" y="211" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#f2f2f2" fill-opacity="0.85">scrapers</text>
+<rect x="314.0" y="228" width="191.1" height="22" rx="4" fill="#151515" stroke="#ffffff" stroke-opacity="0.12"/>
+<text x="323.0" y="243" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#f2f2f2" fill-opacity="0.85">structured events → Axiom</text>
+<rect x="300" y="300" width="470" height="120" rx="6" fill="#0f0f0f" stroke="#ffffff" stroke-opacity="0.55"/>
+<text x="314" y="324" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13.5" font-weight="700" fill="#f2f2f2">Data · Python ETL on Airflow</text>
+<rect x="314.0" y="340" width="191.1" height="22" rx="4" fill="#151515" stroke="#ffffff" stroke-opacity="0.12"/>
+<text x="323.0" y="355" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#f2f2f2" fill-opacity="0.85">MPXJ: reads .mpp natively</text>
+<rect x="513.1" y="340" width="128.8" height="22" rx="4" fill="#151515" stroke="#ffffff" stroke-opacity="0.12"/>
+<text x="522.1" y="355" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#f2f2f2" fill-opacity="0.85">idempotent loads</text>
+<rect x="314.0" y="372" width="66.5" height="22" rx="4" fill="#151515" stroke="#ffffff" stroke-opacity="0.12"/>
+<text x="323.0" y="387" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#f2f2f2" fill-opacity="0.85">quality</text>
+<rect x="388.5" y="372" width="38.8" height="22" rx="4" fill="#151515" stroke="#ffffff" stroke-opacity="0.12"/>
+<text x="397.5" y="387" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#f2f2f2" fill-opacity="0.85">PPC</text>
+<rect x="435.2" y="372" width="66.5" height="22" rx="4" fill="#151515" stroke="#ffffff" stroke-opacity="0.12"/>
+<text x="444.2" y="387" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#f2f2f2" fill-opacity="0.85">S-curve</text>
+<rect x="509.7" y="372" width="66.5" height="22" rx="4" fill="#151515" stroke="#ffffff" stroke-opacity="0.12"/>
+<text x="518.7" y="387" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#f2f2f2" fill-opacity="0.85">finance</text>
+<path d="M228.0,117.0 L262.0,117.0 L262.0,117.0 L298.0,117.0" fill="none" stroke="#8a8a8a" stroke-width="1.2" marker-end="url(#ponta)"/>
+<path d="M228.0,181.0 L262.0,181.0 L262.0,181.0 L298.0,181.0" fill="none" stroke="#8a8a8a" stroke-width="1.2" marker-end="url(#ponta)"/>
+<path d="M228.0,181.0 L280.0,181.0 L280.0,320.0 L298.0,320.0" fill="none" stroke="#8a8a8a" stroke-width="1.2" marker-end="url(#ponta)"/>
+<path d="M228.0,245.0 L262.0,245.0 L262.0,245.0 L298.0,245.0" fill="none" stroke="#8a8a8a" stroke-width="1.2" marker-end="url(#ponta)"/>
+<path d="M228.0,309.0 L280.0,309.0 L280.0,320.0 L298.0,320.0" fill="none" stroke="#8a8a8a" stroke-width="1.2" marker-end="url(#ponta)"/>
+<path d="M228.0,373.0 L280.0,373.0 L280.0,373.0 L298.0,373.0" fill="none" stroke="#8a8a8a" stroke-width="1.2" marker-end="url(#ponta)"/>
+<rect x="820" y="92" width="160" height="64" rx="6" fill="#0f0f0f" stroke="#ffffff" stroke-opacity="0.2"/>
+<text x="834" y="116" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13.5" font-weight="700" fill="#f2f2f2">Postgres</text>
+<text x="834" y="135" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">Drizzle migrations</text>
+<rect x="820" y="206" width="160" height="64" rx="6" fill="#0f0f0f" stroke="#ffffff" stroke-opacity="0.2"/>
+<text x="834" y="230" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13.5" font-weight="700" fill="#f2f2f2">Next.js fronts</text>
+<text x="834" y="249" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">3 apps</text>
+<path d="M770.0,124.0 L818.0,124.0" fill="none" stroke="#8a8a8a" stroke-width="1.2" marker-end="url(#ponta)"/>
+<path d="M818.0,238.0 L772.0,238.0" fill="none" stroke="#8a8a8a" stroke-width="1.2" marker-end="url(#ponta)"/>
+<rect x="820" y="300" width="160" height="64" rx="6" fill="#0f0f0f" stroke="#ffffff" stroke-opacity="0.2"/>
+<text x="834" y="324" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13.5" font-weight="700" fill="#f2f2f2">BI warehouse</text>
+<text x="834" y="343" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">Postgres</text>
+<rect x="1012" y="300" width="156" height="64" rx="6" fill="#0f0f0f" stroke="#ffffff" stroke-opacity="0.2"/>
+<text x="1026" y="324" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13.5" font-weight="700" fill="#f2f2f2">BI · Next.js</text>
+<text x="1026" y="343" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">dashboards</text>
+<path d="M770.0,332.0 L818.0,332.0" fill="none" stroke="#8a8a8a" stroke-width="1.2" marker-end="url(#ponta)"/>
+<path d="M980.0,332.0 L1010.0,332.0" fill="none" stroke="#8a8a8a" stroke-width="1.2" marker-end="url(#ponta)"/>
+<rect x="1012" y="92" width="156" height="178" rx="6" fill="#0f0f0f" stroke="#ffffff" stroke-opacity="0.2"/>
+<text x="1026" y="116" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13.5" font-weight="700" fill="#f2f2f2">Axiom</text>
+<text x="1026" y="135" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">structured logs</text>
+<text x="1026" y="151" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">per-event fields</text>
+<text x="1026" y="167" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a"></text>
+<text x="1026" y="183" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">LGPD: aggregates</text>
+<text x="1026" y="199" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">only, no PII out</text>
+<path d="M740.0,92.0 L740.0,80.0 L1090.0,80.0 L1090.0,90.0" fill="none" stroke="#8a8a8a" stroke-width="1.2" stroke-dasharray="4 4" marker-end="url(#ponta)"/>
+<line x1="32" y1="466" x2="54" y2="466" stroke="#f2f2f2" stroke-width="2"/>
+<text x="64" y="470" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" letter-spacing="2.2" fill="#8a8a8a">DELIVERY LOOP · EVERY CHANGE, NO EXCEPTIONS</text>
+<rect x="32" y="488" width="168" height="72" rx="6" fill="#0f0f0f" stroke="#ffffff" stroke-opacity="0.55"/>
+<text x="46" y="512" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13.5" font-weight="700" fill="#f2f2f2">Claude Code</text>
+<text x="46" y="531" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">hooks · autoreview</text>
+<text x="46" y="547" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">team memory (MCP)</text>
+<path d="M201.7,524.0 L223.7,524.0" fill="none" stroke="#8a8a8a" stroke-width="1.2" marker-end="url(#ponta)"/>
+<rect x="226" y="488" width="168" height="72" rx="6" fill="#0f0f0f" stroke="#ffffff" stroke-opacity="0.2"/>
+<text x="240" y="512" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13.5" font-weight="700" fill="#f2f2f2">Pull request</text>
+<text x="240" y="531" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">small, one subject</text>
+<text x="240" y="547" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">linked to a task</text>
+<path d="M395.3,524.0 L417.3,524.0" fill="none" stroke="#8a8a8a" stroke-width="1.2" marker-end="url(#ponta)"/>
+<rect x="419" y="488" width="168" height="72" rx="6" fill="#0f0f0f" stroke="#ffffff" stroke-opacity="0.2"/>
+<text x="433" y="512" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13.5" font-weight="700" fill="#f2f2f2">CI audit gate</text>
+<text x="433" y="531" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">types · tests</text>
+<text x="433" y="547" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">LGPD / PII gate</text>
+<path d="M589.0,524.0 L611.0,524.0" fill="none" stroke="#8a8a8a" stroke-width="1.2" marker-end="url(#ponta)"/>
+<rect x="613" y="488" width="168" height="72" rx="6" fill="#0f0f0f" stroke="#ffffff" stroke-opacity="0.2"/>
+<text x="627" y="512" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13.5" font-weight="700" fill="#f2f2f2">AI review agent</text>
+<text x="627" y="531" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">approves or</text>
+<text x="627" y="547" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">requests changes</text>
+<path d="M782.7,524.0 L804.7,524.0" fill="none" stroke="#8a8a8a" stroke-width="1.2" marker-end="url(#ponta)"/>
+<rect x="807" y="488" width="168" height="72" rx="6" fill="#0f0f0f" stroke="#ffffff" stroke-opacity="0.2"/>
+<text x="821" y="512" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13.5" font-weight="700" fill="#f2f2f2">Deploy train</text>
+<text x="821" y="531" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">scheduled windows</text>
+<text x="821" y="547" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">migrations ride it</text>
+<path d="M976.3,524.0 L998.3,524.0" fill="none" stroke="#8a8a8a" stroke-width="1.2" marker-end="url(#ponta)"/>
+<rect x="1000" y="488" width="168" height="72" rx="6" fill="#0f0f0f" stroke="#ffffff" stroke-opacity="0.55"/>
+<text x="1014" y="512" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13.5" font-weight="700" fill="#f2f2f2">Production</text>
+<text x="1014" y="531" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">daily deploy check</text>
+<text x="1014" y="547" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8a8a8a">commit on /health</text>
+</svg>
