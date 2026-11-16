@@ -2,18 +2,16 @@
 """Gera as imagens do perfil: o terminal do topo e os dois diagramas.
 
 Tudo sai daqui, em dois temas (escuro e claro), sem imagem baixada nem servico
-de terceiro. O terminal anima com SMIL, que roda dentro de <img> no GitHub;
-quem renderiza sem animacao (rsvg, preview) ve so a moldura, por isso o
-STATIC=1 desenha o estado final para conferir.
+de terceiro. O terminal anima com SMIL, que roda dentro de <img> no GitHub.
+O estado base e o terminal completo e a animacao so esconde e revela, entao
+quem nao anima (app mobile, leitor de feed, rsvg) ve o texto inteiro.
 
     python3 scripts/gen_profile.py
-    STATIC=1 python3 scripts/gen_profile.py   # sem animacao, para preview
 """
 import os
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ASSETS = f"{RAIZ}/assets"
-STATIC = os.environ.get("STATIC") == "1"
 
 MONO = "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace"
 
@@ -99,6 +97,15 @@ def terminal(tema):
     relogio = 0.5
     prompt = "$ "
 
+    def ate(seg):
+        """Esconde do instante 0 ate `seg` e congela visivel.
+
+        O estado base do SVG e o terminal completo: quem nao roda SMIL (app do
+        GitHub, leitor de feed, rsvg) ve tudo, e quem roda ve a digitacao.
+        """
+        return (f'<animate attributeName="opacity" values="0;1" keyTimes="0;1" calcMode="discrete" '
+                f'begin="0s" dur="{seg:.2f}s" fill="freeze"/>')
+
     for n, (tipo, conteudo) in enumerate(LINHAS):
         y = y0 + n * LH
         if tipo == "gap":
@@ -108,34 +115,31 @@ def terminal(tema):
             inicio = relogio
             dur = min(len(conteudo) * 0.03, 1.5)
             px = X0 + len(prompt) * CW
-            a(f'<g opacity="{1 if STATIC else 0}">')
-            if not STATIC:
-                a(f'<set attributeName="opacity" to="1" begin="{inicio:.2f}s" fill="freeze"/>')
+            a(f'<g>{ate(inicio)}')
             a(f'<text x="{X0}" y="{y}" font-family="{MONO}" font-size="{FS}" fill="{t["dim"]}" '
               f'xml:space="preserve">{prompt}</text>')
-            if STATIC:
-                a(f'<text x="{px:.1f}" y="{y}" font-family="{MONO}" font-size="{FS}" '
-                  f'fill="{t["ink"]}" xml:space="preserve">{esc(conteudo)}</text>')
-            else:
-                cid = f"c{n}"
-                passos = ";".join(f"{i * CW * 1.04:.1f}" for i in range(len(conteudo) + 1))
-                a(f'<clipPath id="{cid}"><rect x="{px:.1f}" y="{y - FS - 4}" width="0" height="{FS + 10}">'
-                  f'<animate attributeName="width" values="{passos}" calcMode="discrete" '
-                  f'begin="{inicio:.2f}s" dur="{dur:.2f}s" fill="freeze"/></rect></clipPath>')
-                a(f'<text x="{px:.1f}" y="{y}" font-family="{MONO}" font-size="{FS}" '
-                  f'fill="{t["ink"]}" clip-path="url(#{cid})" xml:space="preserve">{esc(conteudo)}</text>')
+            # largura do recorte por caractere, do 0 ate o comando inteiro; a
+            # primeira chave segura o recorte fechado ate o comando comecar
+            cheio = (len(conteudo) + 1) * CW * 1.04
+            total = inicio + dur
+            larguras = [0.0] + [i * CW * 1.04 for i in range(len(conteudo))] + [cheio]
+            tempos = [0.0] + [(inicio + i * dur / len(conteudo)) / total for i in range(len(conteudo))] + [1.0]
+            cid = f"c{n}"
+            a(f'<clipPath id="{cid}"><rect x="{px:.1f}" y="{y - FS - 4}" width="{cheio:.1f}" height="{FS + 10}">'
+              f'<animate attributeName="width" values="{";".join(f"{v:.1f}" for v in larguras)}" '
+              f'keyTimes="{";".join(f"{v:.4f}" for v in tempos)}" calcMode="discrete" '
+              f'begin="0s" dur="{total:.2f}s" fill="freeze"/></rect></clipPath>')
+            a(f'<text x="{px:.1f}" y="{y}" font-family="{MONO}" font-size="{FS}" '
+              f'fill="{t["ink"]}" clip-path="url(#{cid})" xml:space="preserve">{esc(conteudo)}</text>')
             a('</g>')
-            relogio = inicio + dur + 0.3
+            relogio = total + 0.3
             continue
 
         if tipo == "out":
             spans = "".join(
                 f'<tspan fill="{cor[e]}" font-weight="{peso[e]}">{esc(s)}</tspan>' for s, e in conteudo)
-            a(f'<text x="{X0}" y="{y}" font-family="{MONO}" font-size="{FS}" xml:space="preserve" '
-              f'opacity="{1 if STATIC else 0}">{spans}'
-              + ("" if STATIC else
-                 f'<set attributeName="opacity" to="1" begin="{relogio:.2f}s" fill="freeze"/>')
-              + '</text>')
+            a(f'<text x="{X0}" y="{y}" font-family="{MONO}" font-size="{FS}" xml:space="preserve">'
+              f'{ate(relogio)}{spans}</text>')
             relogio += 0.12
             # pausa depois do ultimo "out" de um bloco, como quem le a saida
             prox = LINHAS[n + 1][0] if n + 1 < len(LINHAS) else None
@@ -145,19 +149,14 @@ def terminal(tema):
 
         if tipo == "end":
             a(f'<text x="{X0}" y="{y}" font-family="{MONO}" font-size="{FS}" fill="{t["dim"]}" '
-              f'xml:space="preserve" opacity="{1 if STATIC else 0}">{prompt}'
-              + ("" if STATIC else
-                 f'<set attributeName="opacity" to="1" begin="{relogio:.2f}s" fill="freeze"/>')
-              + '</text>')
+              f'xml:space="preserve">{ate(relogio)}{prompt}</text>')
             cx = X0 + len(prompt) * CW
-            a(f'<rect x="{cx:.1f}" y="{y - FS + 2}" width="{CW:.1f}" height="{FS + 3}" fill="{t["ink"]}" '
-              f'opacity="{1 if STATIC else 0}">'
-              + ("" if STATIC else
-                 # pisca por uns 15 s e fica aceso: repeticao infinita deixa o Chrome
-                 # headless sem quadro estavel (tela em branco no print)
-                 f'<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.5;1" calcMode="discrete" '
-                 f'dur="1.1s" begin="{relogio:.2f}s" repeatCount="14" fill="freeze"/>')
-              + '</rect>')
+            # pisca por uns 15 s e fica aceso: repeticao infinita deixa o Chrome
+            # headless sem quadro estavel (tela em branco no print)
+            a(f'<rect x="{cx:.1f}" y="{y - FS + 2}" width="{CW:.1f}" height="{FS + 3}" fill="{t["ink"]}">'
+              f'{ate(relogio)}'
+              f'<animate attributeName="opacity" values="1;0;1" keyTimes="0;0.5;1" calcMode="discrete" '
+              f'dur="1.1s" begin="{relogio:.2f}s" repeatCount="14" fill="freeze"/></rect>')
 
     a('</svg>')
     salvar(f"terminal-{tema}.svg", p)
